@@ -84,12 +84,6 @@ body, html{
     outline: none;
 }
 
-.input-group input:focus{
-    outline: none;
-    border: none;
-    box-shadow: none;
-}
-
 .forgot-password{
     font-size: 12px;
     color: var(--qui-color);
@@ -108,8 +102,6 @@ body, html{
     box-shadow: 0px 4px 4px var(--qua-color);
     cursor: pointer;
 }
-
-
 
 .btn-login:hover{
     background-color: var(--sec-color);
