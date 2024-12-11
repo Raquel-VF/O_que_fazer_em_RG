@@ -26,17 +26,133 @@ body, html{
    color: var(--qui-color);
 }
 
-.login-container{
+.menu-container{
     width: 390px;
     height: 844px;
-    padding: 45px;
+    padding: 16px;
     border-radius: 16px;
     background-color: var(--sex-color);
 }
 
-.login-container h1 {
-    font-size: 32px;
-    margin-bottom: 50px;
-    margin-top: 80px;
-    font-weight: normal;text-shadow: 0px 4px 4px var(--qua-color);
+.menu-header h1 {
+    font-size: 1.em;
+    text-shadow: 0px 4px 4px var(--qua-color);   
+    padding: 5px; 
+}
+
+.menu-header{
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.menu-location{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    font-size: 1rem;
+    background-color: var(--pri-color);
+    border-radius: 12px;
+    box-shadow: 0px 4px 4px var(--qua-color);
+}
+
+.menu-day{
+    
+    color: var(--qua-color);
+}
+
+.menu-city{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--qua-color); 
+}
+
+.menu-date{
+    
+    color: var(--qua-color);
+}
+
+
+
+/* barra de busca*/
+
+.search-bar{
+    width: 300px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: var(--sec-color);
+    box-shadow: 0px 4px 4px var(--qua-color);
+    color: var(--qua-color);
+    font-size: 14px;
+    margin: 50px 30px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.search-bar img{
+    width: 18px;
+    height: 18px;
+}
+
+.search-bar input{
+    margin: 10px;
+    border:none;
+    flex: 1;
+    background-color: var(--sec-color);
+    color: var(--qua-color);
+    font-size: 16px;
+    text-align: center;
+}
+
+.search-bar button{
+    padding: 5px 20px;
+    border-radius: 8px;
+    background-color: var(--sec-color);
+    color: var(--qui-color);
+    border: none;
+}
+
+.search-bar button:hover{
+    background-color: var(--pri-color);
+}
+
+.search-bar button img{
+    width: 24px;
+    height: 24px;
+}
+
+/*dados usuario*/
+.user-section{
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.profile img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.profile span{
+    font-size: 1rem;
+}
+
+.group-stories{
+    flex: 1;
+}
+
+.events-section h2{
+    font-size: 1.25rem;
+    margin: 16px 0;
+}
+
+.event-cards{
+    display: flex;
+    gap: 16px;
 }

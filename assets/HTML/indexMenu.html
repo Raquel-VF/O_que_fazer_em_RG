@@ -3,10 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu</title>
+    <title>Menu - O que fazer em RG</title>
     <link rel="stylesheet" href="../CSS/styleMenu.css">
 </head>
 <body>
-    <h1>ola mundo</h1>
+    <div class="menu-container">
+        <!--header-->
+        <header class="menu-header">
+            <h1>O que fazer em</h1>
+            <div class="menu-location">
+                <span class="menu-day"></span>
+                <span class="menu-city">Rio grande</span>
+                <span class="menu-date"></span>
+            </div>
+        </header>
+
+        <!--barra de busca -->
+        <div class="search-bar">
+            <input type="text" placeholder="Busca">
+            <button class="serach-button"><img src="../IMAGENS/icones/lupa.png" alt="lupa.png"></button>
+        </div>
+        <!-- perfil e stories -->
+        <div class="user-section">
+            <div class="profile">
+                <img src="../IMAGENS/WhatsApp Image 2024-07-01 at 16.37.53 (1).jpeg" alt="fofto de usuario">
+                <span>@user</span>
+            </div>
+            <div class="grou-stories">
+                <!-- Stories cards -->
+            </div>
+        </div>
+
+        <!--Categorias de Eventos-->
+        <section class="events-section">
+            <h2>Outdoor Eventos</h2>
+            <div class="event-cards-outdoor">
+                <!-- cards outdoor-->
+            </div>
+
+            <h2>Indoor Eventos</h2>
+            <div class="event-cards-indoor">
+                <!-- cards indoor-->
+            </div>
+        </section>
+    </div>
+    <script src="../JAVASCRIPT/scriptMenu.js"></script>
 </body>
 </html>
