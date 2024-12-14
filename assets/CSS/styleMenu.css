@@ -188,12 +188,18 @@ body, html{
     box-shadow: inset ;
 }
 
-.screen-stories{
+.screen-stories {
     width: 60px;
     height: 84px;
     background-color: #3333339c;
     border-radius: 5px;
     box-shadow: inset 0px -2px 4px var(--sex-color);
+}
+.screen-stories img{
+    width: 60px;
+    height: 84px;
+
+    border-radius: 5px;
 }
 
 .user-stories{
@@ -229,27 +235,28 @@ body, html{
     display: flex;
     flex-direction: row;
     gap: 10px;
+    margin: 15px 0;
 }
 
-.encontros-outdoor, esportes-outdoor, familia-outdoor{
+.encontros-outdoor, .esportes-outdoor, .familia-outdoor, .bares-indoor, .gastronomia-indoor, .baladas-indoor{
     width: 112px;
     height: 145px;
     gap: 10px;
 }
 
-.encontros-img-outdoor img, .esportes-img-outdoor img, .familia-img-outdoor img{
+.encontros-img-outdoor img, .esportes-img-outdoor img, .familia-img-outdoor img, .bares-img-indoor img, .gastronomia-img-indoor img, .baladas-img-indoor img{
     width: 110px;
     height: 110px;
     border-radius: 4px;
 }
 
-.encontros-text-outdoor, .esportes-text-outdoor, .familia-text-outdoor{
+.encontros-text-outdoor, .esportes-text-outdoor, .familia-text-outdoor, .bares-text-indoor, .gastronomia-text-indoor, .baladas-text-indoor{
     background-color: var(--pri-color);
     color: var(--qua-color);
     width: 100px;
     height: 20px;
     border-radius: 12px;
-    text-align: center;
+    text-align: justify;
     font-weight: normal ;
     font-size: 14px;
     box-shadow: 0px 3px 3px var(--qua-color);
@@ -259,11 +266,23 @@ body, html{
     position: absolute;
     bottom: 5px;
     padding-left: 15px;
+    cursor: pointer;
 }
 
-.encontros-btn-outdoor, .esportes-btn-outdoor, .familia-btn-outdoor{
-    width: 24px;
-    height: 24px;
+.encontros-text-outdoor:hover, .esportes-text-outdoor:hover, .familia-text-outdoor:hover, .bares-text-indoor:hover, .gastronomia-text-indoor:hover, .baladas-text-indoor:hover{
+    background-color: var(--sec-color);
+}
+
+.familia-text-outdoor, .bares-text-indoor{
+    padding:  0 28px;
+}
+.gastronomia-text-indoor{
+    padding: 0 5px;
+}
+
+.encontros-btn-outdoor, .esportes-btn-outdoor, .familia-btn-outdoor, .bares-btn-indoor, .gastronomia-btn-indoor, .baladas-btn-indoor{
+    width: 20px;
+    height: 20px;
     background-color: var(--pri-color);
     border-radius: 50%;
     cursor: pointer;
@@ -274,10 +293,13 @@ body, html{
     position: relative;
     bottom: 120px;
     left: 85px;
-
 }
 
-.encontros-btn-outdoor img, .esportes-btn-outdoor img, .familia-btn-outdoor img{
-    width: 20px;
-    height: 20px;
+.encontros-btn-outdoor:hover, .esportes-btn-outdoor:hover, .familia-btn-outdoor:hover, .bares-btn-indoor:hover, .gastronomia-btn-indoor:hover, .baladas-btn-indoor:hover{
+    background-color: var(--sec-color);
+}
+
+.encontros-btn-outdoor img, .esportes-btn-outdoor img, .familia-btn-outdoor img, .bares-btn-indoor img, .gastronomia-btn-indoor img, .baladas-btn-indoor img{
+    width: 16px;
+    height: 16px;
 }
