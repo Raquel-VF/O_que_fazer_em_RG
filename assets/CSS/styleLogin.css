@@ -76,12 +76,16 @@ body, html{
 }
 
 .input-group input{
+    width: 100%;
+    max-width: 90%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    display: block;
     padding: 10px;
     font-size: 16px;
     border-radius: 8px;
     border: none;
     background-color: var(--pri-color);
-    color: var(--qui-color);
     outline: none;
 }
 
