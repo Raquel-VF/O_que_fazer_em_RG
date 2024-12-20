@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link rel="stylesheet" href="../CSS/styleGlobal.css">
     <link rel="stylesheet" href="../CSS/styleLogin.css">
 </head>
 <body>
-    <div class="login-container">
+    <div class="container-login">
         <h1>O que fazer em <strong>RG</strong></h1>
         <form class="login-form">
             <div class="input-group">
@@ -24,15 +25,22 @@
                 </span>
                 <input type="text" name="password" id="password" placeholder="Senha">
             </div>
-            <a href="#" class="forgot-password">Esqueci minha senha</a>     
+
+            <!-- esqueci minha senha -->
+            <a href="../HTML/recoverPassword.html" class="forgot-password">Esqueci minha senha</a>  
+
             <!--Botão de login-->
             <button type="submit" id="btn-login" class="btn-login">Login</button>
 
             <div class="divider"> OU</div>
 
+            <!-- botão de login com google-->
             <button type="button" class="btn-google">
-                <img src="../IMAGENS/icones/google.png" alt="Google Icon"> Entrar com Google </button>
-            <p class="signup-text"> Ainda não tem uma conta? <a href="#">Cadastra-se</a></p>
+                <img src="../IMAGENS/icones/google.png" alt="Google Icon"> Entrar com Google 
+            </button>
+
+            <!-- Link para cadastrar-se -->
+            <p class="signup-text"> Ainda não tem uma conta? <a href="../HTML/register.html">Cadastra-se</a></p>
         </form>
 
     </div>

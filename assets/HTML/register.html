@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar</title>
+    <link rel="stylesheet" href="../CSS/styleGlobal.css">
+    <link rel="stylesheet" href="../CSS/styleRegister.css">
+</head>
+<body>
+    <div class="container-register">
+        <h1>Criar uma Conta</h1>
+        <form class="register-form">
+            <div class="input-group">
+                <label for="username"></label>
+                <input type="text" name="username" id="username" placeholder="Nome de usuário" required>
+            </div>
+            <div class="input-group">
+                <label for="email"></label>
+                <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required>
+            </div>
+            <div class="input-group">
+                <label for="password"></label>
+                <input type="password" name="password" id="password" placeholder="Crie uma senha" required>
+            </div>
+            <button type="submit" id="btn-register">Cadastrar</button>
+        </form>
+        <a href="indexLogin.html" class="back-to-login">Voltar ao login</a>
+    </div>
+    <script src="../JAVASCRIPT/scriptRegister.js"></script>
+</body>
+</html>
