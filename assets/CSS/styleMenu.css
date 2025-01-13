@@ -1,24 +1,9 @@
-.container-menu{
-    position: relative;
-    width: 375px;
-    height: 844px;
-    text-align: center;
-    overflow: hidden;
-    padding: 25px 5px;
-    border-radius: 10px;
-    background-color: var(--sex-color);
+.container .menu-header{
+    width: 90vw;
+    height: 20vh;
 }
-
-h1 {
-    padding: 30px 10px 5px 35px; 
-}
-
 
 .menu-location{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 16px;
     font-size: 16px;
     background-color: var(--pri-color);
     border-radius: 12px;
@@ -29,35 +14,36 @@ h1 {
 .menu-city{
     font-size: 23px;
     font-weight: bold;
+    padding: 0 20px;
 }
 
 /* barra de busca*/
 
 .search-bar {
-    width: 300px;
-    height: 50px;
-    margin: 20px;
+    display: flex;
+    width: 65vw;
+    height: 30px;
     color: var(--qua-color);
     font-weight: normal; 
     background-color: var(--pri-color);
     border-radius: 12px;
     border:var(--qua-color);
     box-shadow: 0px 4px 4px var(--qua-color);
-    
 }
 
 .search-bar input{
+    display: inline-block;
     background-color: var(--pri-color);
     border: none;
-    padding: 10px 0;
+    border-radius: 12px;
     text-align: center;
     font-size: 15px;
+    
 }
 
 .search-bar button{
-    padding: 8px;
+    padding-left: 15px;
     border: none;
-    padding-top: 10px;
     background-color: var(--pri-color);
     cursor: pointer;
 }
@@ -67,13 +53,24 @@ h1 {
     height: 24px; 
     border: none;
 }
+/* perfil e stories */
 
-
+.perfil-e-stories-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
 
 
 /*dados usuario*/
-
 .user-container{
+    width: 110px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -113,12 +110,6 @@ h1 {
     overflow: hidden;
 }
 
-/* perfil e stories */
-
-.perfil-e-stories-container{
-    display: flex;
-    gap: 8px;
-}
 
 .grupo-stories{
     width: 226px;
@@ -147,7 +138,6 @@ h1 {
 .screen-stories img{
     width: 60px;
     height: 84px;
-
     border-radius: 5px;
 }
 
@@ -167,8 +157,11 @@ h1 {
 
 /* Categorias de Eventos */
 .events-section{
-    width: 359px;
-    height: 164px;
+    width: 83vw;
+    height: 70vh;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
 }
 /* texto dos eventos*/
 .events-section h2{
@@ -199,7 +192,7 @@ h1 {
     background-color: var(--pri-color);
     color: var(--qua-color);
     width: 100px;
-    height: 20px;
+    height: 22px;
     border-radius: 12px;
     text-align: justify;
     font-weight: normal ;
@@ -254,4 +247,50 @@ h1 {
 .encontros-btn-outdoor img, .esportes-btn-outdoor img, .familia-btn-outdoor img, .bares-btn-indoor img, .gastronomia-btn-indoor img, .baladas-btn-indoor img{
     width: 16px;
     height: 16px;
+}
+
+
+
+/* Tablets (769px a 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        padding: 15px;
+    }
+
+    .menu-header {
+        width: 80vw;
+        height: 15vh;
+    }
+
+    .search-bar {
+        width: 70%;
+        height: 30px;
+        font-size: 16px;
+        display: flex;
+    }
+
+    .perfil-e-stories-container {
+        flex-direction: row;
+        gap: 25px;
+        width: 90%;
+    }
+
+    .user-container {
+        width: 200px;
+    }
+
+    
+    .events-section{
+        width: 100vw;
+        height: 35vh;
+        background-color: rgb(255, 0, 191);
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    .event-cards-outdoor, .event-cards-indoor {
+        flex-direction: row;
+        gap: 20px;
+    }
 }

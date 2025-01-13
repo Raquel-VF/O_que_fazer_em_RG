@@ -1,30 +1,243 @@
-@media only screen and (max-width: 768px){
-}
 
+
+/* importando fonte poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/* zerando o global */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Poppins, sans-serif;
-    
 }
-
+/* variaveis das cores */
 :root{
     --pri-color: #6FE5B1;
-    --sec-color: #CFFFEA;
+    --sec-color: #afecd2;
     --ter-color: #231F20;
     --qua-color: #000000;
     --qui-color: #FFFFFF;
     --sex-color: #333333;
 }
 
+/* body e html global */
 body, html{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: var(--qua-color);        
+    font-family: Arial, sans-serif;
     color: var(--qui-color);
+    line-height: 1.6;
+    background-color: var(--sex-color);
+}
+
+/* container global */
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    background-color: var(--sex-color);
+    padding: 20px;
+}
+
+/* h1 global */
+h1 {
+    font-size: 32px;
+    color: var(--qui-color);
+    font-weight: normal;
+    text-shadow: 0px 4px 4px var(--qua-color);
+}
+/* h2 global */
+h2 {
+    font-size: 45px;
+    color: var(--qui-color);
+    font-weight: bold;
+    text-shadow: 0px 4px 4px var(--qua-color);
+}
+
+/* formulario de login global */
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 100px;
+    width: 70vw;
+}
+
+/* link do login */
+.login-form a {
+    text-decoration: underline var(--pri-color);
+    color: var(--qui-color);
+    font-size: 20px;
+}
+
+/* imput de dados  */
+.input-group {
+    display: flex;
+    align-items: center;
+    background-color: var(--pri-color);
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0px 4px 4px var(--qua-color);
+}
+
+.input-group label {
+    font-size: 34px;
+    margin-bottom: 5px;
+}
+
+.input-group span {
+    display: flex;
+    align-items: flex-start;
+    margin-right: 10px;
+}
+.input-group span img {
+    width: 36px;
+    height: 36px;
+}
+
+.input-group input {
+    width: 100%;
+    max-width: 90%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    display: block;
+    padding: 10px;
+    font-size: 28px;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--pri-color);
+    outline: none;
+}
+
+/* botão do login */
+.btn-login {
+    background-color: var(--pri-color);
+    color: var(--qua-color);
+    font-size: 28px;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0px 4px 4px var(--qua-color);
+    cursor: pointer;
+}
+
+/* media query */
+
+/* Smartphones (até 768px) */
+@media (max-width: 425px) and (min-width: 768px){
+    .container {
+        padding: 10px;
+    }
+
+    .menu-header {
+        width: 100%;
+        height: auto;
+    }
+
+    .search-bar {
+        width: 90%;
+        font-size: 14px;
+    }
+
+    .search-bar input{
+        text-align: center;
+    }
+
+    .perfil-e-stories-container {
+        gap: 15px;
+        width: 100%;
+    }
+
+    .user-container {
+        width: 90%;
+    }
+
+    .events-section {
+        width: 100%;
+    }
+
+    .event-cards-outdoor, .event-cards-indoor {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* Tablets (769px a 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        padding: 15px;
+    }
+
+    .menu-header {
+        width: 80vw;
+        height: 15vh;
+    }
+
+    .search-bar {
+        width: 70%;
+        height: 30px;
+        font-size: 16px;
+        display: flex;
+    }
+
+    .perfil-e-stories-container {
+        flex-direction: row;
+        gap: 25px;
+        width: 90%;
+    }
+
+    .user-container {
+        width: 200px;
+    }
+
+    
+    .events-section{
+        width: 43vw;
+        height: 70vh;
+        background-color: rgb(255, 0, 191);
+        display: flex;
+        flex-direction: row;
+    }
+
+    .event-cards-outdoor, .event-cards-indoor {
+        flex-direction: row;
+        gap: 20px;
+    }
+}
+
+/* Desktops (acima de 1024px) */
+@media (min-width: 1024px) {
+    .container {
+        padding: 20px;
+    }
+
+    .menu-header {
+        width: 70%;
+        height: 25vh;
+    }
+
+    .search-bar {
+        width: 50%;
+        font-size: 18px;
+    }
+
+    .perfil-e-stories-container {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 30px;
+        max-width: 1200px;
+    }
+
+    .user-container {
+        width: 220px;
+    }
+
+    .events-section {
+        width: 60%;
+    }
+
+    .event-cards-outdoor, .event-cards-indoor {
+        flex-direction: row;
+        gap: 30px;
+    }
 }

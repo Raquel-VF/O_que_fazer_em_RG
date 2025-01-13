@@ -1,136 +1,55 @@
-.container-login{
-    width: 390px;
-    height: 844px;
-    padding: 45px;
-    border-radius: 16px;
-    background-color: var(--sex-color);
-    padding-top: 150px;
-}
-
-.login-container h1 {
-    font-size: 32px;
-    margin-top: 80px;
-    font-weight: normal;
-    text-shadow: 0px 4px 4px var(--qua-color);
-}
-
-.login-form{
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    margin-top: 40px;
-}
-
-.input-group{
-    display: flex;
-    align-items: center;
-    background-color: var(--pri-color);
-    border-radius: 8px;
-    padding: 10px;
-    margin-bottom: 15px;
-    box-shadow: 0px 4px 4px var(--qua-color);
-}
-
-.input-group label {
-    font-size: 14px;
-    margin-bottom: 5px;
-    
-}
-
-.input-group span{
-    display: flex;
-    align-items: flex-start;
-    margin-right: 10px;
-}
-
-.input-group span img{
-    width: 36px;
-    height: 36px;
-}
-
-.input-group input{
-    width: 100%;
-    max-width: 90%;
-    box-sizing: border-box;
-    margin: 0 auto;
-    display: block;
-    padding: 10px;
-    font-size: 16px;
-    border-radius: 8px;
-    border: none;
-    background-color: var(--pri-color);
-    outline: none;
-}
-
-.forgot-password{
-    font-size: 12px;
-    color: var(--qui-color);
-    text-decoration: none;
-    align-self: flex-end;
-    margin-bottom: 15px;
-}
-
-.btn-login {
-    background-color: var(--pri-color);
-    color: var(--qua-color);
-    font-size: 16px;
-    padding: 10px;
-    border: none;
-    border-radius: 8px;
-    box-shadow: 0px 4px 4px var(--qua-color);
-    cursor: pointer;
-}
-
-.btn-login:hover{
-    background-color: var(--sec-color);
-}
-
-.login-form a {
-    text-decoration: underline var(--pri-color);
-}
-
-.divider{
-    font-size: 12px;
-    color: var(--qui-color);
-    margin: 15px 0;
-    align-self: center;
-}
-
-.btn-google{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    background-color: var(--sec-color);
-    box-shadow: 0px 4px 4px var(--qua-color);
-    color: var(--qua-color);
-    font-size: 14px;
-    padding: 10px;
-    border: none;
-    border-radius: 12px;
-    cursor: pointer;
-}
-
-.btn-google img{
-    width: 24px;
-    height: 24px;
-}
-
-.btn-google:hover{
-    background-color: var(--pri-color);
-}
 
 
-
-.signup-text {
-    font-size: 14px;
-    color: var(--qui-color);
-    margin-top: 10px;
-    text-shadow: 0px 4px 4px var(--qua-color);
-}
-
-.signup-text a {
-    color: var(--qui-color);
-    text-decoration: underline var(--pri-color);
-    text-shadow: 0px 4px 4px var(--qua-color);
-}
+.container h1{
+    padding-top: 50px;
+    font-size: 42px;
+ }
+ /* esqueci a senha (recoverpassword)*/
+ .forgot-password a{
+     padding-left: 300px;
+ }
+ 
+ /* OU da pagina de login*/
+ .divider {
+     font-size: 12px;
+     color: var(--qui-color);
+     margin: 15px 0;
+     align-self: center;
+     font-size: 22px;
+ }
+ /* botão login google */
+ .btn-google {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     gap: 10px;
+     background-color: var(--sec-color);
+     box-shadow: 0px 4px 4px var(--qua-color);
+     color: var(--qua-color);
+     font-size: 28px;
+     padding: 10px;
+     border: none;
+     border-radius: 12px;
+     cursor: pointer;
+ }
+ /* imagem do icone do google */
+ .btn-google img {
+     width: 24px;
+     height: 24px;
+ }
+ 
+ .btn-google a {
+     color: var(--qua-color);
+     text-decoration: none;
+     font-size: 28px;
+ }
+ 
+ /* link para registrar conta nova */
+ .signup-text {
+     font-size: 28px;
+     color: var(--qui-color);
+     margin-top: 10px;
+     text-shadow: 0px 4px 4px var(--qua-color);
+ }
+ 
+ 
