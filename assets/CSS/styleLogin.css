@@ -3,6 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 20px;
 }
 
 .container h1{
@@ -65,16 +66,16 @@
 @media (min-width: 414px) and (max-width:767px){
     h1{
         font-size: 35px;
+        padding-top: 5px;
      }
     .login-form{
         margin-top: 30px;
     }
     .login-form a {
         font-size: 16px;
+        text-align: end;
     }
-    .forgot-password a{
-        padding-left: 300px;
-    }
+
     .divider {
         font-size: 16px;
     }
@@ -85,6 +86,7 @@
     /* link para registrar conta nova */
     .signup-text {
         font-size: 16px;
+        text-align: end;
     }
     .signup-text a {
         font-size: 14px;
@@ -93,49 +95,59 @@
 
 /* Tablets (769px a 1024px) */
 @media (min-width: 768px) and (max-width:1023px) {
+    .container-login{
+        padding-top: 0px;
+    }
     h1{
         font-size: 40px;
+        padding-top: 5px;
      }
     .login-form{
         margin-top: 30px;
     }
+    /* forgotpassword (esta dentro da a no login-form) */
+    .login-form a {
+        font-size: 14px;
+        text-align: end;
+    }
      .divider {
-         font-size: 22px;
+         font-size: 18px;
      }
      .signup-text {
-         font-size: 22px;
+         font-size: 18px;
+         text-align: end;
      }
      .signup-text a {
-        font-size: 18px;
+        font-size: 14px;
     }
 }
 
 
 /* Desktops (acima de 1024px) */
 @media (min-width: 1024px) {
-
     h1{
         font-size: 50px;
+        padding-top: 5px;
      }
     .login-form{
         margin-top: 25px;
     }
+    /* forgotpassword (esta dentro da a no login-form) */
     .login-form a {
         font-size: 16px;
-    }
-    .forgot-password a{
-        padding-left: 300px;
+        text-align: end;
     }
     .divider {
-        font-size: 22px;
+        font-size: 16px;
     }
     .btn-google a {
-        font-size: 30px;
-    }
-    .signup-text {
         font-size: 28px;
     }
-    .signup-text a {
+    .signup-text {
         font-size: 22px;
+        text-align: end;
+    }
+    .signup-text a {
+        font-size: 16px;
     }
 }
