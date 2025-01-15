@@ -1,30 +1,37 @@
-.container .menu-header{
-    width: 90vw;
-    height: 20vh;
+.container-menu{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
 }
 
+.menu-header{
+    padding: 15px;
+}
 .menu-location{
     font-size: 16px;
     background-color: var(--pri-color);
     border-radius: 12px;
     box-shadow: 0px 4px 4px var(--qua-color);
     color: var(--qua-color);
+    padding: 0 40px;
 }
 
 .menu-city{
     font-size: 23px;
     font-weight: bold;
-    padding: 0 20px;
+    padding: 0 50px;
 }
 
 /* barra de busca*/
 
 .search-bar {
     display: flex;
-    width: 65vw;
-    height: 30px;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    padding: 5px 20px;
     color: var(--qua-color);
-    font-weight: normal; 
     background-color: var(--pri-color);
     border-radius: 12px;
     border:var(--qua-color);
@@ -32,13 +39,12 @@
 }
 
 .search-bar input{
-    display: inline-block;
+    font-size: 18px;
+    font-weight: normal; 
     background-color: var(--pri-color);
     border: none;
     border-radius: 12px;
-    text-align: center;
     font-size: 15px;
-    
 }
 
 .search-bar button{
@@ -61,9 +67,7 @@
     justify-content: center;
     gap: 20px;
     width: 90%;
-    margin: 20px auto;
     padding: 20px;
-    border-radius: 12px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -74,6 +78,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     gap: 10px;
     padding: 15px;
     margin-bottom: 20px;
@@ -157,28 +162,24 @@
 
 /* Categorias de Eventos */
 .events-section{
-    width: 83vw;
-    height: 70vh;
-    background-color: aqua;
+    width: 70%;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 /* texto dos eventos*/
 .events-section h2{
     font-size: 14px;
     font-weight: normal;
     display: flex;
-    margin-bottom: 5px;
 }
 /* sessão dos eventos */
 .event-cards-outdoor, .event-cards-indoor{
-    width: 112px;
-    height: 145px;
     position: relative;
     display: flex;
     flex-direction: row;
     gap: 10px;
-    margin: 15px 0;
 }
 
 /* imagem de dentro do container de eventos*/
@@ -251,46 +252,104 @@
 
 
 
-/* Tablets (769px a 1024px) */
-@media (min-width: 769px) and (max-width: 1024px) {
-    .container {
-        padding: 15px;
-    }
+/* media query min-width(>) max-width(<) */ 
 
-    .menu-header {
-        width: 80vw;
-        height: 15vh;
+/* Smartphones (até 768px) */
+@media (min-width: 414px) and (max-width:767px){
+    .menu-header{
+        padding: 10px;
     }
-
-    .search-bar {
-        width: 70%;
-        height: 30px;
-        font-size: 16px;
-        display: flex;
+    h1{
+        font-size: 22px;
     }
-
+    .menu-city {
+        font-size: 20px;
+    }
+    .search-bar{
+        padding: 2px 20px;
+    }
+    .user-container{
+        padding: 10px;
+    }
     .perfil-e-stories-container {
-        flex-direction: row;
-        gap: 25px;
-        width: 90%;
+        padding-top: 14px;
+        padding-bottom: 0;
     }
-
-    .user-container {
-        width: 200px;
-    }
-
-    
     .events-section{
-        width: 100vw;
-        height: 35vh;
-        background-color: rgb(255, 0, 191);
-        display: flex;
-        flex-direction: row;
-        gap: 30px;
+        background-color: aqua;
     }
+    .events-section h2{
+        padding-right: 250px;
+    }
+}
 
-    .event-cards-outdoor, .event-cards-indoor {
+/* Tablets (769px a 1024px) */
+@media (min-width: 768px) and (max-width:1023px) {
+    .menu-header{
+        padding: 10px;
+    }
+    h1{
+        font-size: 22px;
+    }
+    .menu-city {
+        font-size: 20px;
+    }
+    .search-bar{
+        padding: 2px 20px;
+    }
+    .user-container{
+        padding: 10px;
+    }
+    .perfil-e-stories-container {
+        padding-top: 14px;
+        padding-bottom: 0;
+    }
+    .events-section{
+        background-color: rgb(140, 0, 255);
+    }
+    .events-section h2{
+        font-size: 18px;
+        padding-right: 300px;
+    }
+    .event-cards-outdoor, .event-cards-indoor{
+        gap: 40px;
+    }
+    
+}
+
+/* Desktops (acima de 1024px) */
+@media (min-width: 1024px) {
+    .menu-header{
+        display: flex;
         flex-direction: row;
         gap: 20px;
+        padding: 10px;
     }
+    h1{
+        font-size: 22px;
+    }
+    .menu-city {
+        font-size: 20px;
+    }
+    .search-bar{
+        padding: 2px 20px;
+    }
+    .user-container{
+        padding: 10px;
+    }
+    .perfil-e-stories-container {
+        padding-top: 14px;
+        padding-bottom: 0;
+    }
+    .events-section{
+        background-color: rgba(255, 238, 0, 0.514);
+    }
+    .events-section h2{
+        font-size: 18px;
+        padding-right: 300px;
+    }
+    .event-cards-outdoor, .event-cards-indoor{
+        gap: 40px;
+    }
+    
 }
