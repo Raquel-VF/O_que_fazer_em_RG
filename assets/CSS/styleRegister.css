@@ -9,6 +9,7 @@
     padding: 20px;
     border-radius: 10px;
     background-color: var(--sex-color);
+    height: 90vh;
 }
 
 .container-register h1{

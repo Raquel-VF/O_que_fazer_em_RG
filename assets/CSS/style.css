@@ -17,9 +17,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 210px;
+    justify-content: flex-end;
     color: white;
     margin: 0 80px;
+    height: 75vh;
 }
 
 .content a {
