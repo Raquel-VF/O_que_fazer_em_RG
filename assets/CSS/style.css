@@ -4,13 +4,12 @@
     left: 50%;
     transform: translateX(-50%);
     width: 100vw;
-    height: 40vh;
-    overflow: hidden;
+    height: 50vh;
     background-color: var(--pri-color);
     opacity: 5.3;
     filter: blur(120px);
     z-index: 1;
-    border-radius: 40%;
+    border-radius: 50% 50% 100% 100%;
 }
 
 .content{
