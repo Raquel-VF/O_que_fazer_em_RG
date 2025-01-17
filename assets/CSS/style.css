@@ -4,7 +4,7 @@
     left: 50%;
     transform: translateX(-50%);
     width: 100vw;
-    height: 50vh;
+    height: 40vh;
     background-color: var(--pri-color);
     opacity: 5.3;
     filter: blur(120px);

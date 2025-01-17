@@ -3,7 +3,7 @@
     flex-direction: column; 
     align-items: center;
     text-align: center;
-    height: 75vh;
+    height: 50vh;
     justify-content: flex-end;
 }
 
@@ -262,6 +262,9 @@
     .menu-header{
         padding: 10px;
     }
+    .container-menu {
+        height: 75vh;
+    }
     h1{
         font-size: 22px;
     }
@@ -304,9 +307,6 @@
         padding-top: 14px;
         padding-bottom: 0;
     }
-    .events-section{
-        background-color: rgb(140, 0, 255);
-    }
     .events-section h2{
         font-size: 18px;
         padding-right: 300px;
@@ -324,6 +324,9 @@
         flex-direction: row;
         gap: 20px;
         padding: 10px;
+    }
+    .container-menu {
+        height: 90vh;
     }
     h1{
         font-size: 22px;
